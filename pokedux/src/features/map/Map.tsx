@@ -1,6 +1,7 @@
 import Map from 'react-map-gl';
 import Search from '../search/Search';
 import Table from '../table/Table';
+import { FaGithub } from 'react-icons/fa';
 
 
 const PokeMap = () => {
@@ -28,6 +29,18 @@ const PokeMap = () => {
                 }}
             >
                 <Search />
+            </div>
+            <div
+                style={{
+                    position: 'absolute',
+                    top: '20px',
+                    right: '20px',
+                    zIndex: 1 // Set a higher value for z-index to overlay the search bar on top
+                }}
+            >
+                <a href="https://github.com/penoptech/pokedux" target="_blank" rel="noreferrer">
+                    <FaGithub className="rainbow-icon" size={40} />
+                </a>
             </div>
 
             <div className="flex flex-row justify-between m-5">
