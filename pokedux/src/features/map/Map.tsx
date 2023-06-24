@@ -25,7 +25,7 @@ const PokeMap = () => {
                     position: 'absolute',
                     top: '20px',
                     left: '20px',
-                    zIndex: 1 // Set a higher value for z-index to overlay the search bar on top
+                    zIndex: 0 // Set a higher value for z-index to overlay the search bar on top
                 }}
             >
                 <Search />
